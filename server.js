@@ -29,17 +29,17 @@ var server = http.createServer(function(request, response){
     <link rel="stylesheet" href="/style.css">
     <h1>Hello你好</h1>
     `)
-    response.end()
+    response.end();
   } else if(path === '/x'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`h1{color: red;}`)
-    response.end()
+    response.end();
   } else {
     response.statusCode = 404
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
     response.write(`你访问的页面不存在`)
-    response.end()
+    response.end();
   }
 
   /******** 代码结束，下面不要看 ************/
