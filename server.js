@@ -26,7 +26,7 @@ var server = http.createServer(function(request, response){
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
     response.write(`
     <link rel="stylesheet" href="/style.css">
-    Hello你好`)
+    <h1>Hello你好</h1>`)
     response.end()
   } else if(path === '/x'){
     response.statusCode = 200
